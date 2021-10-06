@@ -1,0 +1,26 @@
+GET http://localhost:3000/movies
+
+###
+GET http://localhost:3000/movies/615d25a70fd593a944877d2c
+
+###
+DELETE http://localhost:3000/movies/615d25a70fd593a944877d2c 
+
+###
+PATCH http://localhost:3000/movies/615d30f08ecdc95b05e9dc6c 
+Content-Type: application/json
+
+{
+    "title": "test"
+}
+
+###
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Kill Bill vol 1",
+    "director": "Quentin Tarantino"
+    
+    
+}
